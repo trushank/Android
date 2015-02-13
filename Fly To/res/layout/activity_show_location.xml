@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowLocation" >
+
+<EditText
+    android:id="@+id/editText1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:ems="10" >
+
+  
+</EditText>
+
+<com.google.android.maps.MapView
+    android:id="@+id/mapview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/editText1"
+    android:apiKey="0D5uOIVoo_vvGPMotZ8ZlLMbt_00K9RdwMpYH7Q" >
+
+</com.google.android.maps.MapView>
+
+</RelativeLayout>

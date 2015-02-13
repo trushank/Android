@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/vic_map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.38"
+            android:orientation="vertical" android:padding="15dp">
+     <!-- Debug: "0D5uOIVoo_vsjO9Bq3-LQaaqHaWtNKlcvYzppHg"--> 
+     <!-- Real: "0D5uOIVoo_vsAv19l8KUl04sR6lzCNt-Tb-W_oA"-->
+            <com.google.android.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="fill_parent"
+                android:layout_height="225dp"
+                android:apiKey="0D5uOIVoo_vsAv19l8KUl04sR6lzCNt-Tb-W_oA"
+                android:clickable="true"
+                android:enabled="true" android:focusable="true" android:focusableInTouchMode="true"/>
+            
+<LinearLayout android:id="@+id/zoom" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true" 
+        />
+ 
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/mapRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.38" android:padding="10dp">
+
+            <TextView
+                android:id="@+id/map_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="               Tap here to fix your location"
+                android:textAppearance="?android:attr/textAppearanceSmall" android:onClick="change_loc" android:clickable="true" android:longClickable="true"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/mapRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.38">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="               " />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  You               " android:clickable="true" android:onClick="gotome" android:gravity="top"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yellow" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   GoodSam" android:clickable="true" android:onClick="gotosam" android:gravity="top"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emer Code:" />
+
+                    <TextView
+                        android:id="@+id/victim_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="123456"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No of Sams:" />
+
+                    <TextView
+                        android:id="@+id/victim_sams"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="140dp"
+                        android:minWidth="140dp"
+                        android:paddingLeft="17dp"
+                        android:text="3"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/victim_refresh"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="victim_refresh"
+                android:src="@drawable/refresh" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are at :" />
+
+            <TextView
+                android:id="@+id/victim_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="230dp"
+                android:minWidth="220dp"
+                android:paddingLeft="7dp"
+                android:text="Rafi Ahmed Kidwai road        "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp" >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:text="Nearest Sam is: " />
+
+                    <TextView
+                        android:id="@+id/victim_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="60dp"
+                        android:minWidth="60dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:text="215m"
+                        android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="13dp"/>
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="22dp"
+                        android:paddingTop="9dp"
+                        android:text="away" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact: " />
+
+                    <TextView
+                        android:id="@+id/victim_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="victim_call"
+                        android:paddingLeft="10dp"
+                        android:text="9833064861"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/victim_map"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:onClick="victim_map"
+                android:src="@drawable/ic_menu_directions" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/victim_chat"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="215dp"
+                    android:minWidth="215dp"
+                    android:paddingTop="10dp"
+                    android:text="Trunk: Hello, Where are you?" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/victim_chatbutton"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:onClick="victim_chat"
+                    android:text="Chat" />
+            </LinearLayout>
+        </TableRow>
+
+        <Button
+            android:id="@+id/victim_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="victim_cancel"
+            android:text="Cancel Alert" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

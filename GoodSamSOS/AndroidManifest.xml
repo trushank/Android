@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.goodsam.goodsamsos" android:versionCode="7" android:versionName="1.6">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.goodsam.goodsamsos.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <permission android:name="com.goodsam.goodsamsos.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <supports-screens  android:largeScreens="true"   android:normalScreens="true"  android:smallScreens="true"/> 
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:screenOrientation="portrait">
+        <uses-library android:name="com.google.android.maps" />
+        <activity android:name=".GoodSamSOSActivity" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity2" android:label="Choose Profile Photo">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.Activity2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".C2DMClientActivity" android:label="C2DMClientActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.C2DMClientActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SignupActivity" android:label="Signup">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.SignupActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="LoginActivity" android:label="Login">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="AddContactsActivity" android:label="Add Contacts">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.AddContactsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="CheckDetailsActivity" android:label="Check Details">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.CheckDetailsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PasswordActivity" android:label="Enter Desired Password">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.PasswordActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationResultActivity" android:label="RegistrationResultActivity">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.RegistrationResultActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MessageReceivedActivity" android:label="MessageReceivedActivity">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.MessageReceivedActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="C2DMClientActivity"></activity>
+        <receiver android:name=".C2DMRegistrationReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"></action>
+                <category android:name="com.goodsam.goodsamsos" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".C2DMMessageReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"></action>
+                <category android:name="com.goodsam.goodsamsos" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="Alert" android:label="Victim Details">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.Alert" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GoodSamScreen" android:label="Victim Details">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.GoodSamScreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Emergency" android:label="Select Emergency Type" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.Emergency" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="VictimScreen" android:label="Help is on its way">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.VictimScreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Chat" android:label="Type to send message">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.Chat" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="sad" android:label="Sorry">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.sad" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Settings" android:label="Settings">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.Settings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.goodsam.goodsamsos.MyService" android:exported="true" android:label="@string/app_name" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.MyService"></action>
+            </intent-filter>
+        </service>
+        <activity android:name="Search" android:label="Search">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.Search" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Map" android:label="Location">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.Map" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="HowTo" android:label="HowTo">
+            <intent-filter>
+                <action android:name="com.goodsam.goodsamsos.HowTo" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

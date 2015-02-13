@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GoodSamSOSActivity!</string>
+    <string name="app_name">GoodSam SOS</string>
+    <string name="loading">Loading...</string>
+    <string name="name">First Name Last Name</string>
+    <string name="name1">Name</string>
+    <string name="login">Log In</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="blank">"                        "</string>
+    <string name="signup">Sign up</string>
+    <string name="emailid">trunk@gmail.com</string>
+<string-array name="blood">
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+            </string-array>
+    <string-array name="howto">
+      <item>Handle Emergency situation </item>
+<item>Survive a Heart Attack</item>
+<item>Stop Bleeding</item>
+<item>Check Pulse</item>
+<item>Perform CPR on an Adult</item>
+<item>Check for a Fracture when Performing First Aid</item>
+<item>Change a Tire of Car</item>
+<item>Change Car battery</item>
+<item>Change Oil in Car</item>
+<item>Change Spark Plugs in Car</item>
+<item>Help someone having panic attack</item>
+<item>Help someone having asthma attack</item>
+<item>Defend yourself</item>
+<item>Stay Safe when stranded</item>
+<item>Stay Safe in Stranded Elevator</item>
+<item>Thwart an Abduction Attempt</item>
+<item>Survive an Abduction or Hostage Situation</item>
+<item> React During an Earthquake /  Survive an Earthquake</item>
+<item>Use Fire Extinguisher</item>
+<item>Tackle Fire</item>
+<item>Treat a victim of Electric Shock</item>
+<item>Rescue an Active Drowning Victim </item>
+<item>Treat a bullet wound till Professional Help arrives</item>
+<item>Survive a Riot</item>
+<item>Help Choking Victim</item>
+<item>Attend Stab Wound</item>
+<item>Treat a Concussion</item>
+<item>Provide First Aid for Broken bone</item>
+<item>Assist a Bleeding Victim in the Absence of EMS</item>
+<item>If you are having a stroke</item>
+<item>Treat a burn</item>
+<item>List of First Aids for different emergencies</item>
+
+            </string-array>
+            <string-array name="links">
+      <item>http://www.wikihow.com/Handle-an-Emergency-Situation</item>
+<item>http://m.wikihow.com/Survive-a-Heart-Attack</item>
+<item>http://www.wikihow.com/Stop-Bleeding</item>
+<item>http://www.wikihow.com/Check-Your-Pulse</item>
+<item>http://www.wikihow.com/Do-CPR-on-an-Adult</item>
+<item>http://www.wikihow.com/Check-for-a-Fracture-when-Performing-First-Aid</item>
+<item>http://www.wikihow.com/Change-a-Tire</item>
+<item>http://www.wikihow.com/Change-a-Car-Battery</item>
+<item>http://www.wikihow.com/Change-the-Oil-in-Your-Car</item>
+<item>http://www.wikihow.com/Change-Spark-Plugs-in-a-Car</item>
+<item>http://www.wikihow.com/Help-Someone-Having-a-Panic-Attack</item>
+<item>http://www.wikihow.com/Help-an-Asthmatic-During-a-Asthma-Attack-and-a-Panic-Attack</item>
+<item>http://www.wikihow.com/Defend-Yourself-in-a-Fight-at-School</item>
+<item>http://www.wikihow.com/Stay-Safe-When-Stranded</item>
+<item>http://www.wikihow.com/Stay-Safe-in-a-Stranded-Elevator</item>
+<item>http://www.wikihow.com/Thwart-an-Abduction-Attempt</item>
+<item>http://www.wikihow.com/Survive-an-Abduction-or-Hostage-Situation</item>
+<item>http://www.wikihow.com/React-During-an-Earthquake</item>
+<item>http://www.wikihow.com/Use-a-Fire-Extinguisher</item>
+<item>http://www.wikihow.com/Keep-Safe-During-a-House-Fire</item>
+<item>http://www.wikihow.com/Treat-a-Victim-of-Electrical-Shock</item>
+<item>http://www.wikihow.com/Rescue-an-Active-Drowning-Victim</item>
+<item>http://www.wikihow.com/Treat-a-Bullet-Wound</item>
+<item>http://www.wikihow.com/Survive-a-Riot</item>
+<item>http://www.wikihow.com/Help-a-Choking-Victim</item>
+<item>http://www.wikihow.com/Attend-to-a-Stab-Wound</item>
+<item>http://www.wikihow.com/Treat-a-Concussion</item>
+<item>http://www.wikihow.com/Provide-First-Aid-for-a-Broken-Bone</item>
+<item>http://www.wikihow.com/Assist-a-Bleeding-Victim-in-the-Absence-of-EMS</item>
+<item>http://www.wikihow.com/Know-if-You-Are-Having-a-Stroke</item>
+<item>http://www.wikihow.com/Treat-a-Burn</item>
+<item>http://www.wikihow.com/Category:First-Aid-and-Emergencies</item>
+
+            </string-array>
+</resources>

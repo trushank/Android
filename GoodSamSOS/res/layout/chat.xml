@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/chat_box"
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:editable="false"
+            android:gravity="bottom"
+            android:inputType="none|textMultiLine" android:focusable="true" android:scrollbarStyle="insideOverlay" android:scrollbars="vertical" android:textSize="15dp" android:autoLink="all"/>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85" >
+
+            <EditText
+                android:id="@+id/chat_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/chat_send"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Send" android:onClick="chat_send"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit Chat" android:onClick="chat_exit"/>
+
+    </LinearLayout>
+
+</ScrollView>
